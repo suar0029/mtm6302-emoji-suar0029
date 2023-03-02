@@ -58,4 +58,16 @@ const emojis = [
 
 ]
 
-const console.log();
+const $emojiCard = document.querySelector('.container')
+const html = []
+ 
+
+for (const emoji of emojis) {
+    console.log(emoji)
+   html.push(`<div class="emoji-card">
+                    <div class="emoji-icon">${emoji.dec}</div>
+                    <p>${emoji.hex}</p> 
+            </div>`)
+  }  
+
+$emojiCard.innerHTML = html.join('')
